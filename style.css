@@ -14,6 +14,7 @@ a {
     background-color: white;
     justify-content: space-between;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+
 }
 
 .header,
@@ -22,18 +23,14 @@ a {
 .header-right {
     display: flex;
     margin: auto;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .header,
 .header-left,
 .header-right {
-    gap: 35px;
-}
-
-.logo {
-    gap: 10px;
+    gap: 38px;
 }
 
 .header-left,
@@ -44,18 +41,45 @@ a {
 
 .logo {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 25px;
-    font-weight: 700;
+    font-size: 26px;
+    font-weight:bold;
+    padding: 0;
 }
 
 .active {
     color: orange;
 }
 
-.header img {
-    width: 25px;
-    height: 25px;
+.header p,
+.logo {
+    display: block;
 }
+
+.header p {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 100;
+}
+
+.buku,
+.buku img {
+    width: 50px;
+    height: 50px;
+    padding-left: 24px;
+}
+
+.header p,
+.logo,
+.buku,
+.buku img {
+    margin: 0;
+}
+
+.header p,
+.logo{
+    padding-right: 40px;
+}
+
 
 
 
@@ -75,13 +99,13 @@ a {
     display: flex;
     padding-top: 2px;
     padding-bottom: 2px;
-    padding-left: 17px;
-    padding-right: 17px;
-    gap: 45px;
+    padding-left: 16px;
+    padding-right: 16px;
+    gap: 42px;
 }
 
 .headera-left,
 .headera-right {
-    font-size: 11px;
-    font-weight: 600;
+    font-size: 12px;
+    /* font-weight: 600; */
 }
