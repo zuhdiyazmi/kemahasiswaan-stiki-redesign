@@ -15,7 +15,7 @@ header {
     top: 0;
     position: fixed;
     width: 100%;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     white-space: nowrap;
 }
 
@@ -23,11 +23,11 @@ header {
 
 .header {
     background-color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
     padding-left: 40px;
     padding-right: 40px;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
 
 .header,
@@ -60,7 +60,7 @@ header {
 
 .header p {
     margin: 0;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: normal;
 }
 
@@ -97,8 +97,8 @@ header {
 
 .headera-left,
 .headera-right {
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     padding-left: 40px;
     padding-right: 40px;
     font-size: 15px;
@@ -108,10 +108,19 @@ header {
 
 .headera-left a,
 .headera-right a {
-    color: darkorange;
     font-size: 11px;
     font-weight: 500;
 }
+
+.headera-left a,
+.headera-right a {
+    color: darkorange;
+}
+
+
+
+
+
 
 .content {
     /* background-color: whitesmoke; */
@@ -132,5 +141,5 @@ header {
 }
 
 .content p, .content h2 {
-    background-color: peachpuff;
+    background-color: lightyellow;
 }
