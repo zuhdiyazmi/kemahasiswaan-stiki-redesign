@@ -12,12 +12,16 @@ a {
     text-decoration: none;
 }
 
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+}
 
 .header {
-    width: 100%;
-    position: fixed;
     background-color: white;
-    justify-content: space-between;
+    justify-content: space-between; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -25,6 +29,8 @@ a {
 .logo,
 .header-left,
 .header-right {
+    /* space between vs margin auto???? */
+    
     display: flex;
     margin: auto;
     padding-top: 5px;
@@ -95,9 +101,9 @@ a {
 
 .headera {
     width: 100%;
-    position: relative;
     background-color: white;
     justify-content: space-between;
+    margin: auto;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
