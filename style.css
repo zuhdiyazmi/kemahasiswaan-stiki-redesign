@@ -4,7 +4,7 @@ body {
 
     background: linear-gradient(-45deg, #8f2100, #880034, #005472, #005a44);
     background-size: 400% 400%;
-    animation: gradient 3s ease infinite;
+    animation: gradient 2s ease infinite;
 }
 
 header {
@@ -12,7 +12,11 @@ header {
     width: 100%;
     box-shadow: 0 2px 4px rgba(22, 15, 15, 0.3);
     white-space: nowrap;
-    top: 0;
+    top: 0%;
+}
+
+.container2 div {
+    flex: 1;
 }
 
 .container2 a {
@@ -28,13 +32,7 @@ header .container2 {
     background-color: whitesmoke;
 }
 
-.container2 div {
-    flex: 1;
-}
-
-.container2,
-.container2 .center2,
-.container2 .right2 {
+.container2, .container2 .center2, .container2 .right2 {
     margin: auto;
     display: flex;
     gap: 25px;
@@ -50,8 +48,7 @@ header .container2 {
     margin-right: 30px;
 }
 
-.center2 a:hover,
-.right2 a:hover {
+.center2 a:hover, .right2 a:hover {
     color: blue;
     text-decoration: underline;
 }
@@ -59,6 +56,11 @@ header .container2 {
 /*  */
 /*  */
 /*  */
+
+div .left, div .center, div .right {
+    flex: 1;
+    /* background-color: pink; */
+}
 
 .container a {
     color: black;
@@ -69,26 +71,32 @@ header .container2 {
 }
 
 header .container {
-    padding-top: 7px;
-    padding-bottom: 7px;
+    /* padding-top: 7px;
+    padding-bottom: 7px; */
     background-color: white;
 }
 
-.container div {
-    flex: 1;
-    /* background-color: pink; */
-}
-
-.container,
-.container .center,
-.container .right {
-    margin: auto;
+.container {
     display: flex;
-    gap: 25px;
+    gap: 10px;
 }
 
-.container .left,
-.container .left p {
+.right {
+    /* margin: auto; */
+    display: flex;
+}
+
+.center {
+    /* margin: auto; */
+    display: flex;
+    /* display: grid; */
+    /* grid-template-columns: repeat(6, 1fr); */
+    /* gap: 25px; */
+    /* text-align: center; */
+    /* padding: 2rem 1rem; */
+}
+
+.container .left, .container .left p {
     justify-content: left;
     margin: 0;
 }
@@ -98,17 +106,17 @@ header .container {
 }
 
 .container .right {
-    margin-right: 40px;
+    margin-right: 20px;
     justify-content: right;
 }
 
 .container .left {
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
 .left {
     display: flex;
-    gap: 11px;
+    gap: 10px;
     align-items: center;
 }
 
@@ -130,16 +138,15 @@ header .container {
     height: 65px;
 }
 
-.center a:hover,
-.right a:hover {
-    text-decoration: underline 2px darkorange;
+.center a:hover, .right a:hover {
+    text-decoration: underline 2px gold;
     text-underline-offset: 7px;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .left a:hover {
-    color: darkorange;
-    transition: 0.3s;
+    color: gold;
+    transition: 0.2s;
 }
 
 /*  */
@@ -158,8 +165,7 @@ header .container {
     border: 1px solid black;
 }
 
-.konten .judul,
-.konten .judul2 {
+.konten .judul, .konten .judul2 {
     text-align: center;
 }
 
@@ -167,10 +173,11 @@ header .container {
 /*  */
 /*  */
 
-footer{
+footer {
     padding: 1px;
     background-color: white;
     text-align: center;
+    white-space: nowrap;
 }
 
 /*  */
@@ -189,4 +196,35 @@ footer{
     100% {
         background-position: 0% 50%;
     }
+}
+
+
+div.das {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* background-color: blue; */
+    /* border: 1px solid black; */
+}
+
+.left .logo {
+    padding-left: 15px;
+}
+
+.das:hover a {
+    text-decoration: underline 1.5px gold;
+    text-underline-offset: 7px;
+    transition: 0.2s;
+}
+
+.das:hover{
+    /* transition: 0.2s; */
+    /* background-color: gold; */
+    box-shadow: 0 2px 2px rgba(22, 15, 15, 0.3);
+}
+
+.container {
+    height: 75px;
 }
