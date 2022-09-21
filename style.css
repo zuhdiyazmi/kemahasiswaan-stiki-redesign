@@ -1,128 +1,162 @@
 body {
-    padding: 0;
     margin: 0;
-
     background: linear-gradient(-45deg, #8f2100, #880034, #005472, #005a44);
-    background-size: 400% 400%;
-    animation: gradient 2s ease infinite;
+    background-size: 900% 900%;
+    animation: gradient 1s ease infinite;
 }
 
 header {
-    position: fixed;
-    width: 100%;
-    box-shadow: 0 2px 4px rgba(22, 15, 15, 0.3);
-    white-space: nowrap;
+    /* membuat header menempel diatas */
     top: 0%;
+    /* membuat header tidak ikut bergerak saat di scroll */
+    position: fixed;
+    /* membuat lebar header menjadi 100% */
+    width: 100%;
+    /* membuat paragraf header menjadi satu baris*/
+    white-space: nowrap;
+    /* bayangan header */
+    box-shadow: 0 2px 4px rgba(22, 15, 15, 0.3);
 }
 
-.container2 div {
+/*  */
+/*  */
+/* HEADER BAGIAN ATAS */
+/*  */
+/*  */
+
+.container-top {
+    /* memberi jarak antar div */
+    gap: 150px;
+}
+
+.container-top div {
+    /* membagi div mjd beberapa bagian secara proporsional satu sama lain */
     flex: 1;
+
+    /* testcolor */
+    background-color: pink;
 }
 
-.container2 a {
+.container-top a {
+    /* memberi jarak font bagian atas */
+    padding-top: 3px;
+    /* memberi jarak font bagian bawah */
+    padding-bottom: 3px;
+    /* memberi jarak font bagian atas */
+    padding-left: 15px;
+    /* memberi jarak font bagian bawah */
+    padding-right: 15px;
+    /* mengubah warna font */
     color: black;
+    /* menghapus default underline link */
     text-decoration: none;
+    /* mengubah gaya font */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* mengubah ukuran font */
     font-size: 12px;
+
+    /* testcolor */
+    background-color: yellow;
 }
 
-header .container2 {
-    padding-top: 2px;
-    padding-bottom: 2px;
-    background-color: whitesmoke;
-}
-
-.container2, .container2 .center2, .container2 .right2 {
-    margin: auto;
+.container-top, .top-left, .top-right {
+    /* mengatur beberapa div menjadi satu baris ke kanan (horizontal) */
     display: flex;
-    gap: 25px;
+    /* mengubah warna background */
+    background-color: whitesmoke;
+
+    /* testcolor */
+    background-color: blue;
 }
 
-.container2 .center2 {
+.top-left {
+    /* memindahkan ke bagian kiri */
     justify-content: left;
-    margin-left: 30px;
+    /* memberi jarak bagian kiri */
+    margin-left: 25px;
 }
 
-.container2 .right2 {
+.top-right {
+    /* memindahkan ke bagian kanan */
     justify-content: right;
-    margin-right: 30px;
+    /* memberi jarak bagian kanan */
+    margin-right: 25px;
 }
 
-.center2 a:hover, .right2 a:hover {
+.top-left a:hover, .top-right a:hover {
+    /* mengubah warna pada font saat ditunjuk */
     color: blue;
+    /* menambahkan garis bawah pada font saat ditunjuk */
     text-decoration: underline;
 }
 
 /*  */
 /*  */
+/* HEADER BAGIAN BAWAH */
+/*  */
 /*  */
 
-div .left, div .center, div .right {
-    flex: 1;
-    /* background-color: pink; */
-}
-
 .container a {
+    /* mengubah warna pada font */
     color: black;
+    /* menghapus default underline pada teks link */
     text-decoration: none;
+    /* mengubah gaya font */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* mengubah ukuran font */
     font-size: 16px;
-    font-weight: 600;
+    /* mengubah ketebalan font */
+    font-weight: 500;
+
+    /* testcolor */
+    background-color: red;
 }
 
-header .container {
-    /* padding-top: 7px;
-    padding-bottom: 7px; */
+.container {
+    /* mengubah warna background */
     background-color: white;
 }
 
 .container {
+    /* mengatur beberapa div menjadi satu baris ke kanan (horizontal) */
     display: flex;
+    /* memberi jarak antar div */
     gap: 10px;
+
 }
 
-.right {
-    /* margin: auto; */
+.left, .center, .right {
+    /* membagi div mjd beberapa bagian secara proporsional satu sama lain */
+    flex: 1;
+    /* mengatur menjadi satu baris ke kanan (horizontal) */
     display: flex;
+    /* testcolor */
+    background-color: green;
 }
 
-.center {
-    /* margin: auto; */
-    display: flex;
-    /* display: grid; */
-    /* grid-template-columns: repeat(6, 1fr); */
-    /* gap: 25px; */
-    /* text-align: center; */
-    /* padding: 2rem 1rem; */
-}
-
-.container .left, .container .left p {
+.left p {
     justify-content: left;
     margin: 0;
 }
 
-.container .center {
+.left {
+    margin-left: 20px;
+    gap: 9px;
+    align-items: center;
+}
+
+.center {
     justify-content: center;
 }
 
-.container .right {
+.right {
     margin-right: 20px;
     justify-content: right;
 }
 
-.container .left {
-    margin-left: 20px;
-}
-
-.left {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
-
 .left a {
-    font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
     font-weight: 100;
 }
 
@@ -219,10 +253,6 @@ div.das {
     /* transition: 0.2s; */
     /* background-color: gold; */
     box-shadow: 0 2px 4px rgba(22, 15, 15, 0.3);
-}
-
-.container {
-    /* height: 75px; */
 }
 
 .das a {
