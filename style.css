@@ -246,16 +246,16 @@ div.das {
     pointer-events: none;
 }
 
-.nama:hover {
-    /* color: rgb(153, 130, 0); */
-    /* transition: 0.4s; */
+/* .nama:hover {
+    color: rgb(153, 130, 0);
+    transition: 0.4s;
 
-    /* background: linear-gradient(to right, black, black, rgb(153, 130, 0), black, black);
+    background: linear-gradient(to right, black, black, rgb(153, 130, 0), black, black);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    animation: rainbow-animation 130s linear infinite; */
-}
+    animation: rainbow-animation 130s linear infinite;
+} */
 
 .das a {
     /* background-color: yellow; */
