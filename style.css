@@ -1,8 +1,8 @@
 body {
     margin: 0;
-    background: linear-gradient(-45deg, #8f2100, #880034, #005472, #005a44);
+    /* background: linear-gradient(-45deg, #8f2100, #880034, #005472, #005a44);
     background-size: 900% 900%;
-    animation: gradient 1s ease infinite;
+    animation: gradient 1s ease infinite; */
 }
 
 header {
@@ -34,7 +34,7 @@ header {
     flex: 1;
 
     /* testcolor */
-    background-color: pink;
+    /* background-color: pink; */
 }
 
 .container-top a {
@@ -56,17 +56,25 @@ header {
     font-size: 12px;
 
     /* testcolor */
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
-.container-top, .top-left, .top-right {
+.container-top {
     /* mengatur beberapa div menjadi satu baris ke kanan (horizontal) */
     display: flex;
     /* mengubah warna background */
     background-color: whitesmoke;
 
     /* testcolor */
-    background-color: blue;
+    /* background-color: blue; */
+
+    /* background-color: rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px); */
+}
+
+.top-left, .top-right {
+    display: flex;
 }
 
 .top-left {
@@ -109,7 +117,7 @@ header {
     font-weight: 500;
 
     /* testcolor */
-    background-color: red;
+    /* background-color: red; */
 }
 
 .container {
@@ -125,13 +133,19 @@ header {
 
 }
 
+.center, .right {
+    /* agar menu tetap berada di tengah MESKI LOGO MEMBESAR */
+    margin: auto;
+}
+
 .left, .center, .right {
     /* membagi div mjd beberapa bagian secara proporsional satu sama lain */
     flex: 1;
     /* mengatur menjadi satu baris ke kanan (horizontal) */
     display: flex;
+
     /* testcolor */
-    background-color: green;
+    /* background-color: green; */
 }
 
 .left p {
@@ -162,7 +176,7 @@ header {
 
 .left p {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 21px;
+    font-size: 22px;
     font-weight: 100;
 }
 
@@ -170,17 +184,6 @@ header {
     display: flex;
     width: 65px;
     height: 65px;
-}
-
-.center a:hover, .right a:hover {
-    text-decoration: underline 2px gold;
-    text-underline-offset: 7px;
-    transition: 0.5s;
-}
-
-.left a:hover {
-    color: gold;
-    transition: 0.2s;
 }
 
 /*  */
@@ -197,6 +200,8 @@ header {
     padding: 25px;
     text-align: justify;
     border: 1px solid black;
+    /* font-size: clamp(16px, 25px,22px); */
+    /* font-size: clamp(1rem, 1rem, 3rem); */
 }
 
 .konten .judul, .konten .judul2 {
@@ -218,6 +223,47 @@ footer {
 /*  */
 /*  */
 
+div.das {
+    /* align-items: center; */
+    /* padding-left: 15px; */
+    /* padding-right: 15px; */
+    height: 100%;
+    display: flex;
+    /* background-color: blue; */
+    /* border: 1px solid black; */
+}
+
+.das:hover a {
+    text-decoration: underline 4px gold;
+    color: rgb(153, 130, 0);
+    text-underline-offset: 30px;
+    transition: 0.4s;
+}
+
+.nama:hover {
+    color: rgb(153, 130, 0);
+    transition: 0.4s;
+}
+
+/* .das:hover {
+    transition: 0.3s;
+    box-shadow: 0 2px 3px rgba(22, 15, 15, 0.3);
+} */
+
+.das a {
+    /* background-color: yellow; */
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.left .logo {
+    padding-left: 20px;
+}
+
+
+
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
@@ -230,39 +276,4 @@ footer {
     100% {
         background-position: 0% 50%;
     }
-}
-
-
-div.das {
-    /* align-items: center; */
-    /* padding-left: 15px; */
-    /* padding-right: 15px; */
-    height: 100%;
-    display: flex;
-    /* background-color: blue; */
-    /* border: 1px solid black; */
-}
-
-.das:hover a {
-    text-decoration: underline 1.5px gold;
-    text-underline-offset: 7px;
-    transition: 0.2s;
-}
-
-.das:hover {
-    /* transition: 0.2s; */
-    /* background-color: gold; */
-    box-shadow: 0 2px 4px rgba(22, 15, 15, 0.3);
-}
-
-.das a {
-    /* background-color: yellow; */
-    padding-top: 28px;
-    padding-bottom: 28px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.left .logo {
-    padding-left: 20px;
 }
