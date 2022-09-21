@@ -236,21 +236,25 @@ div.das {
 }
 
 .das:hover a {
-    text-decoration: underline 2px gold;
+    text-decoration: underline 2px black;
     color: rgb(153, 130, 0);
-    text-underline-offset: 8px;
-    transition: 0.3s;
+    text-underline-offset: 9px;
+    transition: 0.4s;
+}
+
+.logo {
+    pointer-events: none;
 }
 
 .nama:hover {
     /* color: rgb(153, 130, 0); */
     /* transition: 0.4s; */
 
-    background-image:
-        linear-gradient(to right, black, black, rgb(153, 130, 0), black, black);
+    /* background: linear-gradient(to right, black, black, rgb(153, 130, 0), black, black);
+    background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: rainbow-animation 130s linear infinite;
+    color: transparent;
+    animation: rainbow-animation 130s linear infinite; */
 }
 
 .das a {
