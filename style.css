@@ -21,6 +21,12 @@ header a {
 .logo-stiki img {
     display: flex;
     width: 30px;
+    border-radius: 25%;
+}
+
+.logo-stiki {
+    border-radius: 25%;
+    padding: 3px;
 }
 
 .foto-profil img {
@@ -30,7 +36,22 @@ header a {
 }
 
 .foto-profil {
-    margin: 0px 15px 0px 15px;
+    margin: 0px 0px 0px 15px;
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 100%;
+    padding: 3px;
+}
+
+.foto-profil:hover {
+    background:
+        linear-gradient(blue, white, darkgoldenrod, white, blue 100%) 0 0/100% 200%;
+    animation: a 1s linear infinite;
+}
+
+@keyframes a {
+    to {
+        background-position: 0 -200%
+    }
 }
 
 .brand {
@@ -53,7 +74,7 @@ header a {
 
 .profile a {
     display: block;
-    border: 1px solid rgb(230, 230, 230);
+    border: 1px solid rgb(209, 209, 209);
     padding: 9px 15px 10px 15px;
 }
 
@@ -63,29 +84,12 @@ header a {
     min-height: 100%;
 }
 
-.foto-profil {
-    border-radius: 100%;
-    padding: 3px;
-}
-
-.foto-profil:hover {
-    background:
-        linear-gradient(blue, white, darkgoldenrod, white, blue 100%) 0 0/100% 200%;
-    animation: a 1s linear infinite;
-}
-
-@keyframes a {
-    to {
-        background-position: 0 -200%
-    }
-}
-
 /*  */
 
 nav {
     background-color: white;
     padding: 0px 32px 0px 32px;
-    border-bottom: 1px solid rgb(230, 230, 230);
+    border-bottom: 1px solid rgb(209, 209, 209);
     white-space: nowrap;
 }
 
@@ -102,7 +106,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(209, 209, 209);
     border-bottom: 4px solid black;
 }
 
@@ -122,6 +126,7 @@ section h1 {
 
 section p {
     text-align: justify;
+    color: #454545;
     margin: 10px 32px 10px 32px;
     padding: 0px 25px 0px 25px;
 }
@@ -135,5 +140,5 @@ section p {
 }
 
 .sticky+.content {
-    padding-top: 60px;
+    padding-top: 65px;
 }
