@@ -11,9 +11,6 @@ header {
     display: flex;
     align-items: center;
     padding: 8px 32px 8px 32px;
-
-    margin: auto;
-    max-width: 1600px;
 }
 
 header a {
@@ -71,24 +68,23 @@ nav {
     background-color: white;
     padding: 0px 32px 0px 32px;
     border-bottom: 1px solid rgb(230, 230, 230);
+    white-space: nowrap;
 }
 
 nav div {
     display: flex;
-
-    margin: auto;
-    max-width: 1600px;
 }
 
 nav a {
     text-decoration: none;
     color: #454545;
-    padding: 15px;
-    border-bottom: 3px solid transparent;
+    padding: 10px 15px 10px 15px;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
 }
 
 nav a:hover {
-    border-bottom: 3px solid black;
+    border-bottom: 4px solid black;
 }
 
 /*  */
@@ -109,4 +105,16 @@ section p {
     text-align: justify;
     margin: 10px 32px 10px 32px;
     padding: 0px 25px 0px 25px;
+}
+
+/*  */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.content {
+    padding-top: 60px;
 }
