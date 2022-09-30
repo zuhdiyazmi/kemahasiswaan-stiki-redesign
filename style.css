@@ -21,42 +21,15 @@ header a {
 .logo-stiki img {
     display: flex;
     width: 35px;
-    border-radius: 25%;
 }
 
 .logo-stiki {
-    border-radius: 25%;
     padding: 3px;
-}
-
-.foto-profil img {
-    display: flex;
-    width: 35px;
-    border-radius: 100%;
-}
-
-.foto-profil {
-    margin: 0px 0px 0px 13px;
-    border: 1px solid rgb(209, 209, 209);
-    border-radius: 100%;
-    padding: 3px;
-}
-
-.foto-profil:hover {
-    background:
-        linear-gradient(blue, white, darkgoldenrod, white, blue 100%) 0 0/100% 200%;
-    animation: a 1s linear infinite;
-}
-
-@keyframes a {
-    to {
-        background-position: 0 -200%
-    }
 }
 
 .brand {
-    flex: 1;
     display: grid;
+    flex: 1;
     margin: 0px 0px 0px 13px;
 }
 
@@ -72,16 +45,41 @@ header a {
     text-decoration: underline;
 }
 
+.profile {
+    margin: 0px 13px 0px 0px;
+}
+
 .profile a {
     display: block;
-    border: 1px solid rgb(209, 209, 209);
+    border: 1px solid rgb(231, 231, 231);
     padding: 9px 15px 10px 15px;
 }
 
 .profile a:hover {
     background-color: #454545;
     color: white;
-    min-height: 100%;
+}
+
+.foto-profil img {
+    display: flex;
+    width: 35px;
+}
+
+.foto-profil {
+    border: 1px solid rgb(231, 231, 231);
+    padding: 3px;
+}
+
+.foto-profil:hover {
+    background:
+        linear-gradient(blue, white, darkgoldenrod, white, blue 100%) 0 0/100% 200%;
+    animation: a 1s linear infinite;
+}
+
+@keyframes a {
+    to {
+        background-position: 0 -200%
+    }
 }
 
 /*  */
@@ -89,7 +87,7 @@ header a {
 nav {
     background-color: white;
     padding: 0px 32px 0px 32px;
-    border-bottom: 1px solid rgb(209, 209, 209);
+    border-bottom: 1px solid rgb(231, 231, 231);
     white-space: nowrap;
 }
 
@@ -100,99 +98,87 @@ nav div {
 nav a {
     text-decoration: none;
     color: #454545;
-    padding: 10px 15px 10px 15px;
+    padding: 10px 20px 10px 20px;
     border-top: 4px solid transparent;
     border-bottom: 4px solid transparent;
 }
 
+nav li {
+    list-style-type: none;
+}
+
 nav a:hover {
-    background-color: rgb(209, 209, 209);
+    background-color: rgb(231, 231, 231);
     border-bottom: 4px solid black;
 }
 
 /*  */
 
-section {
-    padding-top: 15px;
-
-    margin: auto;
-    max-width: 1600px;
-}
-
-section h1 {
-    font-size: 30px;
-    margin: 0px 32px 0px 32px;
-}
-
-section p {
-    text-align: justify;
-    color: #454545;
-    margin: 10px 32px 10px 32px;
-    padding: 0px 25px 0px 25px;
-}
-
-/*  */
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-.sticky+.content {
-    padding-top: 65px;
-}
-
-
-
-
 li a, .dropbtn {
     display: inline-block;
-    text-decoration: none;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-content a, .dropdown-content-many a {
     background-color: white;
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-    background-color: rgb(209, 209, 209);
-}
-
-li a {
-    background-color: white;
-}
-
-li.dropdown {
-    display: inline-block;
+    background-color: rgb(231, 231, 231);
+    border-bottom: 4px solid black;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    min-width: 175px;
+    border-bottom: 4px solid goldenrod;
+    /* border-bottom: 1px solid rgb(231, 231, 231); */
 }
 
 .dropdown-content-many {
     display: none;
     position: absolute;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    min-width: 250px;
     height: 250px;
     overflow: auto;
+    border-bottom: 4px solid goldenrod;
 }
 
 .dropdown-content a, .dropdown-content-many a {
     display: block;
-    border-bottom: 1px solid transparent;
-    border-top: 1px solid rgb(209, 209, 209);
+    border: 1px solid rgb(231, 231, 231);
 }
 
 .dropdown-content a:hover, .dropdown-content-many a:hover {
-    color: white;
-    border-bottom: 1px solid transparent;
-    border-top: 1px solid transparent;
     background-color: #454545;
+    color: white;
+    border: 1px solid transparent;
 }
 
 .dropdown:hover .dropdown-content, .dropdown:hover .dropdown-content-many {
     display: block;
+}
+
+/*  */
+
+.dkv:hover {
+    min-height: 100%;
+    background:
+        linear-gradient(rgba(255, 0, 0, 1) 0%, rgba(255, 154, 0, 1) 10%, rgba(208, 222, 33, 1) 20%, rgba(79, 220, 74, 1) 30%, rgba(63, 218, 216, 1) 40%, rgba(47, 201, 226, 1) 50%, rgba(28, 127, 238, 1) 60%, rgba(95, 21, 242, 1) 70%, rgba(186, 12, 248, 1) 80%, rgba(251, 7, 217, 1) 90%, rgba(255, 0, 0, 1) 100%) 0 0/100% 200%;
+    animation: a 1s linear infinite;
+}
+
+@keyframes a {
+    to {
+        background-position: 0 -200%
+    }
+}
+
+svg {
+    width: 10px;
+    padding-left: 5px;
 }
