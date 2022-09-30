@@ -142,3 +142,57 @@ section p {
 .sticky+.content {
     padding-top: 65px;
 }
+
+
+
+
+li a, .dropbtn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: white;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(209, 209, 209);
+}
+
+li a {
+    background-color: white;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content-many {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    height: 250px;
+    overflow: auto;
+}
+
+.dropdown-content a, .dropdown-content-many a {
+    display: block;
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid rgb(209, 209, 209);
+}
+
+.dropdown-content a:hover, .dropdown-content-many a:hover {
+    color: white;
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+    background-color: #454545;
+}
+
+.dropdown:hover .dropdown-content, .dropdown:hover .dropdown-content-many {
+    display: block;
+}
