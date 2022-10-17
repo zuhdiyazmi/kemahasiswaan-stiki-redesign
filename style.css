@@ -10,7 +10,7 @@ header {
     background-color: white;
     display: flex;
     align-items: center;
-    padding: 8px 32px 8px 32px;
+    padding: 10px 60px;
 }
 
 header a {
@@ -20,7 +20,7 @@ header a {
 
 .logo-stiki img {
     display: flex;
-    width: 35px;
+    width: 45px;
 }
 
 .logo-stiki {
@@ -30,7 +30,7 @@ header a {
 .brand {
     display: grid;
     flex: 1;
-    margin: 0px 0px 0px 13px;
+    margin: 0px 0px 0px 10px;
 }
 
 .brand-bottom, .profile {
@@ -38,7 +38,7 @@ header a {
 }
 
 .help {
-    margin: 0px 13px 0px 13px;
+    margin: 0px 10px 0px 10px;
 }
 
 .help:hover {
@@ -46,15 +46,14 @@ header a {
 }
 
 .profile {
-    margin: 0px 13px 0px 0px;
+    margin: 0px 10px 0px 0px;
 }
 
 .profile a {
-    border: 1px solid rgb(231, 231, 231);
-    padding: 9px 15px 10px 15px;
-
     display: flex;
     align-items: center;
+    border: 1px solid rgb(231, 231, 231);
+    padding: 9px 15px 10px 15px;
 }
 
 .profile a:hover {
@@ -88,7 +87,7 @@ header a {
 
 nav {
     background-color: white;
-    padding: 0px 32px 0px 32px;
+    padding: 0px 60px;
     border-bottom: 1px solid rgb(231, 231, 231);
     white-space: nowrap;
 }
@@ -100,7 +99,7 @@ nav div {
 nav a {
     text-decoration: none;
     color: #454545;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 20px;
     border-top: 4px solid transparent;
     border-bottom: 4px solid transparent;
 }
@@ -119,7 +118,6 @@ nav a:hover {
 li a, .dropbtn {
     display: inline-block;
     background-color: white;
-
     display: flex;
     align-items: center;
 }
@@ -182,6 +180,6 @@ li a:hover, .dropdown:hover .dropbtn {
 
 svg {
     width: 10px;
-    padding-left: 5px;
-    padding-top: 2px;
+    padding-left: 4px;
+    padding-top: 3px;
 }
